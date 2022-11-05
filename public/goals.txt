@@ -1,0 +1,4 @@
+selector
+button
+prompt
+scroll over story element and display description
