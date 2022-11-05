@@ -20,16 +20,16 @@ nav ul li {
 
 nav ul li:hover {
   padding-right: 50px;
-  font-size: 110%;
+  font-size: 80%;
   cursor:pointer;
   color: gray
   
 }
 
 header {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 .App {
@@ -59,10 +59,12 @@ header {
 }
 
 .prompt {
-  width: 750px;
+  width: 800px;
   font-size: 110%;
 }
-
+.text a {
+  font-weight: bold;
+}
 .text a span {
   display: none;
 }
@@ -70,13 +72,16 @@ header {
 .text a:hover {
   color: gray;
 }
+
+
+
 .text a:hover span{
 
   cursor: pointer;
   display: block;
 	position: absolute;
-	top: 500px;
-	left: 170px;
+  top: 430px;
+	left: 12.5%;
 	margin: 0px;
 	padding: 10px;
 	color:  #282c34;;
@@ -105,3 +110,4 @@ header {
 .selector {
   text-align: left;
 }
+

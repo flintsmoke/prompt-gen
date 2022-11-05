@@ -159,26 +159,10 @@
                         quest,
                         rebellion,
                         rebirth
-                    }
+                    };
 
-
-
-
-    /*
-      
-                
-                <div class="plot">
-                    <h3>Rebellion Against 'The One'</h3>
-                    <p>Concerns a hero who rebels against the all-powerful entity that controls the world until he is forced to surrender to that power.</p>
-                </div>
-            </div>
-
-            <div class="page-title" id="personalities">           
-                <h1>Personality Types</h1>
-           </div>
-
-            <div class="personalities">
-                <div class="analyst personality">
+    
+    let architect = (<div>
                     <h3>Architect</h3>
                     <h5>Most independent</h5>
                     <ul>
@@ -189,8 +173,10 @@
                         <li>Needs things 'my way'</li>
                         <li>Imaginative and strategic thinkers, with a plan for everything.</li>
                     </ul>
-                </div>
-                <div class="analyst personality">
+                </div>);
+
+        let logician = (
+                <div className='pers'>
                     <h3>Logician</h3>
                     <h5>Most conceptual</h5>
                     <ul>
@@ -201,7 +187,11 @@
                         <li>Innovative inventors with an unquenchable thirst for knowledge</li>
                     </ul>
                 </div>
-                <div class="analyst personality">
+
+        );
+
+        let commander = (
+            <div>
                     <h3>Commander</h3>
                     <h5>Most commanding</h5>
                     <ul>
@@ -213,21 +203,28 @@
                         <li>Bold, imaginative and strong willed leaders, always finding a way, or making one</li>
                     </ul>
                 </div>
-                <div class="analyst personality">
-                    <h3>Debater</h3>
-                    <h5>Most inventive</h5>
-                    <ul>
-                        
-                        <li>Given to brinksmanship</li>
-                        <li>Tests limits</li>
-                        <li>Enthusiastic</li>
-                        <li>Innovative</li>
-                        <li>Enjoys arguing both sides</li>
-                        <li>Likes challenges</li>
-                        <li>Smart and curious thinkers who cannot resist an intellectual challenge</li>
-                    </ul>
-                </div>
-                <div class="diplomat personality">
+        );
+                
+
+        let debater = (
+        <div>
+            <h3>Debater</h3>
+            <h5>Most inventive</h5>
+            <ul>
+                
+                <li>Given to brinksmanship</li>
+                <li>Tests limits</li>
+                <li>Enthusiastic</li>
+                <li>Innovative</li>
+                <li>Enjoys arguing both sides</li>
+                <li>Likes challenges</li>
+                <li>Smart and curious thinkers who cannot resist an intellectual challenge</li>
+            </ul>
+        </div>
+        );
+
+        let advocate = (
+                <div>
                     <h3>Advocate</h3>
                     <h5>Most reflective</h5>
                     <ul>
@@ -239,7 +236,10 @@
                         <li>Quiet and mystical, yet very inspiring and tireless idealists</li>
                     </ul>
                 </div>
-                <div class="diplomat personality">
+        );
+
+        let mediator = (
+                <div>
                     <h3>Mediator</h3>
                     <h5>Most idealistic</h5>
                     <ul>
@@ -251,6 +251,17 @@
                         <li>Poetic, kind, and altruistic people, always eager to help a good cause</li>
                     </ul>
                 </div>
+        );
+
+
+        export const personalities = {architect, logician, commander, debater, advocate, mediator}
+
+    /*
+      
+                
+               
+                
+                
                 <div class="diplomat personality">
                     <h3>Protagonists</h3>
                     <h5>Most persuasive</h5>
