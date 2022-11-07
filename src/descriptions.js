@@ -253,16 +253,8 @@
                 </div>
         );
 
-
-        export const personalities = {architect, logician, commander, debater, advocate, mediator}
-
-    /*
-      
-                
-               
-                
-                
-                <div class="diplomat personality">
+        let protagonist = (
+            <div>
                     <h3>Protagonists</h3>
                     <h5>Most persuasive</h5>
                     <ul>
@@ -274,19 +266,25 @@
                         <li>Charismatic and inspiring leaders, able to mesmerize their listeners</li>
                     </ul>
                 </div>
-                <div class="diplomat personality">
-                    <h3>Campaigners</h3>
-                    <h5>Most optimistic</h5>
-                    <ul>
-                        <li>People oriented</li>
-                        <li>Creative</li>
-                        <li>Seeks harmony with others</li>
-                        <li>Life of the party</li>
-                        <li>Better at starting than finishing</li>
-                        <li>Enthusiastic, creative, sociable, free spirits, can always find a reason to smile</li>
-                    </ul>
-                </div>
-                <div class="sentinel personality">
+        )
+
+        let campaigner = (
+            <div>
+                <h3>Campaigners</h3>
+                <h5>Most optimistic</h5>
+                <ul>
+                    <li>People oriented</li>
+                    <li>Creative</li>
+                    <li>Seeks harmony with others</li>
+                    <li>Life of the party</li>
+                    <li>Better at starting than finishing</li>
+                    <li>Enthusiastic, creative, sociable, free spirits, can always find a reason to smile</li>
+                </ul>
+            </div>
+        )
+
+        let logistician = (
+                <div>
                     <h3>Logistician</h3>
                     <h5>Most reliable</h5>
                     <ul>
@@ -298,7 +296,10 @@
                         <li>Practical and fact minded individuals, who reliability cannot be doubted</li>
                     </ul>
                 </div>
-                <div class="sentinel personality">
+        )
+
+        let defender = (
+                <div>
                     <h3>Defender</h3>
                     <h5>Most loyal</h5>
                     <ul>
@@ -309,7 +310,10 @@
                         <li>Very dedicated and warm protectors, ready to defend loved ones</li>
                     </ul>
                 </div>
-                <div class="sentinel personality">
+        )
+
+        let executive = (
+                <div>
                     <h3>Executive</h3>
                     <h5>Most forceful</h5>
                     <ul>
@@ -322,7 +326,10 @@
                         <li>Excellent administrators, unsurpassed at managing things or people</li>
                     </ul>
                 </div>
-                <div class="sentinel personality">
+        )
+
+        let consul = (
+                <div>
                     <h3>Consul</h3>
                     <h5>Most harmonious</h5>
                     <ul>
@@ -334,7 +341,10 @@
                         <li>Extraordinarily caring, social and popular people, eager to help</li>
                     </ul>
                 </div>
-                <div class="explorer personality">
+        )
+
+        let virtuoso = (
+                <div>
                     <h3>Virtuoso</h3>
                     <h5>Most pragmatic</h5>
                     <ul>
@@ -346,7 +356,10 @@
                         <li>Bold and practical experimenters, masters of all kinds of tools</li>
                     </ul>
                 </div>
-                <div class="explorer personality">
+        )
+
+        let adventurer = (
+                <div>
                     <h3>Adventurer</h3>
                     <h5>Most artistic</h5>
                     <ul>
@@ -358,7 +371,10 @@
                         <li>Flexible and charming artists, always ready to explore and experience something new</li>
                     </ul>
                 </div>
-                <div class="explorer personality">
+        )
+
+        let entrepreneur = (
+                <div>
                     <h3>Entrepreneur</h3>
                     <h5>Most fun</h5>
                     <ul>
@@ -370,7 +386,10 @@
                         <li>Smart, energetic, and very perceptive, enjoy living on the edge</li>
                     </ul>
                 </div>
-                <div class="explorer personality">
+        )
+
+        let entertainer =(
+                <div>
                     <h3>Entertainer</h3>
                     <h5>Most generous</h5>
                     <ul>
@@ -383,15 +402,13 @@
                         <li>Spontaneous, energetic, enthusiastic, life is never boring around them</li>
                     </ul>
                 </div>
-                
-            </div>
+        )
 
-            <div class="page-title" id="characters">           
-                <h1>Character Archetypes</h1>
-           </div>
+        export const personalities = {architect, logician, commander, debater, advocate, mediator, protagonist, campaigner, logistician, defender, executive, consul, virtuoso, adventurer, entrepreneur, entertainer}
 
-            <div class="characters">
-                <div class="character">
+
+        let lover =(
+                <div>
                     <h3>The Lover</h3>
                     <h5>The romantic lead who's guided by the heart.</h5>
                     <ul>
@@ -401,7 +418,11 @@
                         <li>Fear: Isolation</li>
                     </ul>
                 </div>
-                <div class="character">
+            
+        )
+
+        let hero = (
+                <div>
                     <h3>The Hero</h3>
                     <h5>The protagonist who rises to meet a challenge and saves the day.</h5>
                     <ul>
@@ -411,7 +432,11 @@
                         <li>Fear: Weakness</li>
                     </ul>
                 </div>
-                <div class="character">
+
+        )
+
+        let magician = (
+                <div>
                     <h3>The Magician</h3>
                     <h5>A powerful figure who has harnessed the ways of the universe to achieve key goals.</h5>
                     <ul>
@@ -421,7 +446,10 @@
                         <li>Fear: Unintended results</li>
                     </ul>
                 </div>
-                <div class="character">
+        )
+
+        let rebel = (
+                <div>
                     <h3>The Rebel</h3>
                     <h5>The outlaw who won't abide by society's demands.</h5>
                     <ul>
@@ -431,7 +459,10 @@
                         <li>Fear: No power</li>
                     </ul>
                 </div>
-                <div class="character">
+        )
+
+        let explorer = (
+                <div>
                     <h3>The Explorer</h3>
                     <h5>A character naturally driven to push the boundaries of the status quo and explore the unknown.</h5>
                     <ul>
@@ -441,7 +472,10 @@
                         <li>Fear: Entrapment</li>
                     </ul>
                 </div>
-                <div class="character">
+        )
+
+        let sage = (
+                <div>
                     <h3>The Sage</h3>
                     <h5>A wise figure with knowledge for those who inquire. The mother figure or mentor is often based on this archetype.</h5>
                     <ul>
@@ -451,7 +485,10 @@
                         <li>Fear: Deception</li>
                     </ul>
                 </div>
-                <div class="character">
+        )
+
+        let innocent = (
+                <div>
                     <h3>The Innocent</h3>
                     <h5>morally pure character, often a child, whose only intentions are good.</h5>
                     <ul>
@@ -461,7 +498,11 @@
                         <li>Fear: Punishment</li>
                     </ul>
                 </div>
-                <div class="character">
+
+        )
+
+        let creator = (
+                <div>
                     <h3>The Creator</h3>
                     <h5>A motivated visionary who creates art or structures during the narrative.</h5>
                     <ul>
@@ -471,7 +512,10 @@
                         <li>Fear: Mediocrity</li>
                     </ul>
                 </div>
-                <div class="character">
+        )
+
+        let ruler = (
+                <div>
                     <h3>The Ruler</h3>
                     <h5>A character with legal or emotional power over others.</h5>
                     <ul>
@@ -481,7 +525,10 @@
                         <li>Fear: Overthrown</li>
                     </ul>
                 </div>
-                <div class="character">
+        )
+
+        let caregiver = (
+                <div>
                     <h3>The Caregiver</h3>
                     <h5>A character who continually supports others and makes sacrifices on their behalf.</h5>
                     <ul>
@@ -491,7 +538,10 @@
                         <li>Fear: Selfishness</li>
                     </ul>
                 </div>
-                <div class="character">
+        )
+
+        let everyman = (
+                <div>
                     <h3>The Everyman</h3>
                     <h5>A relatable character who feels recognizable from daily life.</h5>
                     <ul>
@@ -501,7 +551,10 @@
                         <li>Fear: Exclusion</li>
                     </ul>
                 </div>
-                <div class="character">
+        )
+
+        let jester = (
+                <div>
                     <h3>The Jester</h3>
                     <h5>A funny character or trickster who provides comic relief, but may also speak important truths.</h5>
                     <ul>
@@ -511,34 +564,41 @@
                         <li>Fear: Boredom</li>
                     </ul>
                 </div>
-            </div>
+        )
 
-            <div class="page-title" id="arcs">           
-                <h1>Character Arcs</h1>
-           </div>
+         export const characters = {innocent, everyman, hero, caregiver, explorer, rebel, lover, creator, jester, sage, magician, ruler}
 
+        
 
-            <div class="arcs">
-                <div class="arc">
+         let positive = (
+                <div>
                     <h3>Positive Arc</h3>
                     <h5>Character believes lie, overcomes lie, new truth is liberating.</h5>
                 </div>
-                <div class="arc">
+         );
+         let flat = (
+                <div>
                     <h3>Flat Arc</h3>
                     <h5>Character believes Truth, maintains Truth, uses Truth to overcome world's Lie.</h5>
                 </div>
-                <div class="arc">
+         );
+         let corruption = (
+                <div>
                     <h3>Corruption Arc</h3>
                     <h5>Character sees Truth, rejects Truth, embraces Lie.</h5>
                 </div>
-                <div class="arc">
+         );
+         let disillusionment = (
+                <div>
                     <h3>Disillusionment Arc</h3>
                     <h5>Character believes Lie, overcomes Lie, new Truth is tragic.</h5>
                 </div>
-                <div class="arc">
+         );
+         let fall = (
+                <div>
                     <h3>The Fall</h3>
                     <h5>Character believes Lie, clings to Lie, rejects new Truth, believes worse Lie.</h5>
                 </div>
-            </div>
+         );
 
-            */
+        export const arcs = {positive,flat,corruption,disillusionment, fall}

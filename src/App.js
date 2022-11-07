@@ -91,7 +91,7 @@ selectElements(element){
 
 
     return (
-      <div className="App">
+      <body className="App">
 
         <header className="App-header">
           Super Random Story Prompt Generator
@@ -103,6 +103,8 @@ selectElements(element){
             <li>Character</li>
             <li>Setting</li>
             <li>Random Story Elements</li>
+            <li>Story Premise</li>
+            <li>USP Generator</li>
           </ul>
         </nav>
 
@@ -138,7 +140,11 @@ selectElements(element){
           </div>}
          
         </main>
-      </div>
+
+        <footer> See all <a>genres</a>, <a>plot archetypes</a>, <a>character archetypes</a>, <a>personalities</a>, or <a>arcs</a>.</footer>
+
+      </body>
+      
     );
 
   } 

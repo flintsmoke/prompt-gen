@@ -2,6 +2,8 @@ import React from "react";
 import { genres } from "./descriptions";
 import { plots } from "./descriptions";
 import { personalities } from "./descriptions";
+import { characters } from "./descriptions";
+import { arcs } from "./descriptions";
 
 export default class Prompt extends React.Component{
     constructor(props){
@@ -93,8 +95,6 @@ export default class Prompt extends React.Component{
 
         }
 
-//  personalities: ['n architect',' logician',' commander',' debater','n advocate',' mediator',' protagonist',' campaigner',' logistician',' defender','n executive',' consul',' virtuoso','n adventurer','n entrepreneur','n entertainer'],
-
         showPers(){
 
             let personality = this.props.personality;
@@ -106,24 +106,124 @@ export default class Prompt extends React.Component{
             if(personality===' logician'){
                 description=personalities.logician
             }
+            if(personality===' commander'){
+                description=personalities.commander
+            }
 
+            if(personality===' debater'){
+                description=personalities.debater
+            }
+
+            if(personality==='n advocate'){
+                description=personalities.advocate
+            }
+
+            if(personality===' mediator'){
+                description=personalities.mediator
+            }
+
+            if(personality===' protagonist'){
+                description=personalities.protagonist
+            }
+
+            if(personality===' campaigner'){
+                description=personalities.campaigner
+            }
+
+            if(personality===' logistician'){
+                description=personalities.logistician
+            }
+
+            if(personality===' defender'){
+                description=personalities.defender
+            }
+
+            if(personality==='n executive'){
+                description=personalities.executive
+            }
+
+            if(personality===' consul'){
+                description=personalities.consul
+            }
+            if(personality===' virtuoso'){
+                description=personalities.virtuoso
+            }
+            if(personality==='n adventurer'){
+                description=personalities.adventurer
+            }
+            if(personality==='n entrepreneur'){
+                description=personalities.entrepreneur
+            }
+            if(personality==='n entertainer'){
+                description=personalities.entertainer
+            }
             return description;        
-
-
         }
 
         showChar(){
             let character = this.props.character
             let description;
+
+            if(character===' lover'){
+                description=characters.lover
+            }
+            if(character===' jester'){
+                description=characters.jester
+            }
+            if(character===' hero'){
+                description=characters.hero
+            }
+            if(character===' sage'){
+                description=characters.sage
+            }
+            if(character===' ruler'){
+                description=characters.ruler
+            }
+            if(character===' magician'){
+                description=characters.magician
+            }
+            if(character===' everyman'){
+                description=characters.everyman
+            }
+            if(character===' caregiver'){
+                description=characters.caregiver
+            }
+            if(character===' rebel'){
+                description=characters.rebel
+            }
+            if(character===' innocent'){
+                description=characters.innocent
+            }
+            if(character===' explorer'){
+                description=characters.explorer
+            }
+            if(character===' creator'){
+                description=characters.creator
+            }
             return description;        
-
-
         }
 
         showArc(){
 
             let arc = this.props.arc
             let description;
+
+            if(arc==='positive change'){
+                description =arcs.positive
+            }
+            if(arc==='flat'){
+                description =arcs.flat
+            }
+            if(arc==='corruption'){
+                description =arcs.corruption
+            }
+            if(arc==='disillusionment'){
+                description =arcs.disillusionment
+            }
+            if(arc==='fall'){
+                description =arcs.fall
+            }
+            
             return description;        
 
 

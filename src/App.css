@@ -20,7 +20,6 @@ nav ul li {
 
 nav ul li:hover {
   padding-right: 50px;
-  font-size: 80%;
   cursor:pointer;
   color: gray
   
@@ -111,3 +110,11 @@ header {
   text-align: left;
 }
 
+footer {
+margin-top: 180px;
+font-size: 1rem;
+}
+
+footer a:hover {
+  color:#666;
+}
